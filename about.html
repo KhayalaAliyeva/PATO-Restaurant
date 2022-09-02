@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- swiperjs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <title>PATO</title>
+</head>
+<body>
+    <header id="header">
+        <div class="menu-header ">
+            <div class="container header">
+                <figure class="logo">
+                    <a href="index.html"><img  src="./assets/image/logo-1.webp" alt="logo-1"></a>
+                </figure>
+                <nav>
+                    <ul>
+                        <li>
+                        <a href="index.html" >Home</a>
+                        </li>
+                        <li>
+                        <a href="./menu.html">Menu</a>
+                        </li>
+                        <li>
+                        <a href="reservation.html">Reservation</a>
+                        </li>
+                        <li>
+                        <a href="./gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                        <a href="about.html">About</a>
+                        </li>
+                        <li>
+                        <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                        <a href="contact.html">Contact</a>
+                        </li>
+                        </ul>
+                </nav>
+                <div class="social-boxes">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <button id="show-sidebar" class="btn-menu" ></button>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <button class="fa-solid fa-xmark close-btn"></button>
+            <ul class="menu-sidebar">
+                <li>
+                 <a href="index.html" >Home</a>
+                </li>
+                <li>
+                 <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                 <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                 <a href="about.html">About</a>
+                </li>
+                <li>
+                 <a href="blog.html">Blog</a>
+                </li>
+                <li class="contact">
+                 <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a class="reservation-btn" href="reservation.html">Reservation</a>
+                </li>
+            </ul>
+            <div class="gallery">
+
+                <h4 class="title">Gallery</h4>
+                
+                <div class="gallery-sidebar" id="gallery-sidebar">
+                    <a class="item-gallery-sidebar " >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-01.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-sidebar" >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-02.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-sidebar " >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-03.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-sidebar"  >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-04.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-sidebar" >
+                        <div class="red-overlay"></div>
+                     <img src="./assets/image/gallery/photo-gallery-05.jpg.webp" alt="GALLERY">
+                    </a class=>
+                    <a class="item-gallery-sidebar" >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-06.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-sidebar "  >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-07.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-sidebar ">
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-08.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-sidebar">
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-09.jpg.webp" alt="GALLERY">
+                    </a>
+                    
+                </div>
+            </div>
+    </aside>
+    <main>
+        <!-- sidebar gallery preview -->
+        <div class="show-photo-sidebar">
+            <div class="photo">
+                <div class="img-box">
+                    <div class="slide prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="slide next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <img  class="preview-img"src="">
+    
+                </div>
+                <div class="details">
+                    <div class="title">
+                        Image <span class="current-img">  </span>
+                        of <span class="total-img">  </span>
+                    </div>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                </div>
+            </div>
+            
+        </div>
+        <!-- title -->
+        <section id="title">
+            <h2 class="title">About us</h2>
+        </section>
+        <!-- start our-story -->
+        <section id="our-story">
+            <span class="subheading">Italian Restaurant</span>
+            <h3 class="heading">Our Story</h3>
+            <p class="text">
+                Fusce at risus eget mi auctor pulvinar. Suspendisse maximus venenatis pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam purus purus, lacinia a scelerisque in, luctus vel felis. Donec odio diam, dignissim a efficitur at, efficitur et est. Pellentesque semper est ut pulvinar ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla et leo accumsan, egestas velit ac, fringilla tortor. Sed varius justo sed luctus mattis.
+            </p>
+        </section>
+        <!-- end our-story -->
+        <!-- start video -->
+        <section id="video">
+            <div class="overlay">
+                <div class="content">
+                    <span class="subheading">Discover</span>
+                    <h3 class="heading">Our Video</h3>
+                    <div class="play-btn">
+                        <div class="button">
+                            <i  class="fa fa-play "aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div id="play-video" class="hidden">
+                        <i id="close-video" class="fa-solid fa-xmark close-btn"></i>
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen=""></iframe>
+                        </div>                   
+                    </div>
+                </div>
+
+            </div>
+           
+        </section>
+        <!-- end video -->
+        <!-- start about -->
+        <section id="about">
+            <div class="container total-content">
+                <div class="content">
+                    <span class="subheading">Delicious</span>
+                    <h3 class="heading">RECIPES</h3>
+                    <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+                </div>
+                <div class="photo">
+                    <figure>
+                        <img src="./assets/image/about-photo.webp" alt="about">
+                    </figure>
+                </div>
+            </div>
+            <div class="container total-content content2">
+                <div class="content">
+                    <span class="subheading">Romantic</span>
+                    <h3 class="heading">RESTAURANT</h3>
+                    <p>Fusce iaculis, quam quis volutpat cursus, tellus quam varius eros, in euismod lorem nisl in ante. Maecenas imperdiet vulputate dui sit amet vestibulum. Nulla quis suscipit nisl.</p>
+                </div>
+                <div class="photo">
+                    <figure>
+                        <img src="./assets/image/blog/blog-1.webp" alt="about">
+                    </figure>
+                </div>
+            </div>
+            
+        </section>
+        <!-- end about -->
+        <!-- parallax -->
+        <section id="parallax">
+            <div class="overlay">
+
+            </div>
+
+        </section>
+        <!-- start our-chef -->
+        <section id="our-chef">
+            <div class="container">
+                <span class="subheading">Meet Our</span>
+                <h3 class="heading">Chef</h3>
+                <div class="cards">
+                    <!-- start-card -->
+                    <div class="card">
+                        <div class="card-item">
+                            <figure>
+                                <a href="#">
+                                    <img src="./assets/image/chef-1.webp" alt="" >
+                                </a>
+                            </figure>
+                            <div class="card-body">
+                                <a href="#" class="chef-name">Peter Hart</a>
+                                <span class="position">Chef</span>
+                                <p class="text">
+                                    Donec porta eleifend mauris ut effici-tur. Quisque non velit vestibulum, lob-ortis mi eget, rhoncus nunc
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <!-- end-card -->
+                     <!-- start-card -->
+                     <div class="card">
+                        <div class="card-item">
+                            <figure>
+                                <a href="#">
+                                    <img src="./assets/image/chef-2.webp" alt="" >
+                                </a>
+                            </figure>
+                            <div class="card-body">
+                                <a href="#" class="chef-name">Joyce Bowman</a>
+                                <span class="position">Chef</span>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies felis a sem tempus tempus.
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <!-- end-card -->
+                     <!-- start-card -->
+                     <div class="card">
+                        <div class="card-item">
+                            <figure>
+                                <a href="#">
+                                    <img src="./assets/image/chef-3.webp" alt="" >
+                                </a>
+                            </figure>
+                            <div class="card-body">
+                                <a href="#" class="chef-name">Peter Hart</a>
+                                <span class="position">Chef</span>
+                                <p class="text">
+                                    Phasellus aliquam libero a nisi varius, vitae placerat sem aliquet. Ut at velit nec ipsum iaculis posuere quis in sapien
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <!-- end-card -->
+                    
+                </div>
+
+            </div>
+            
+
+        </section>
+        <!-- end our-chef -->
+        <!-- start signup -->
+        <section id="signup">
+            <div class="signup-form">
+                <span>Specials Sign up</span>
+                <div class="input">
+                    <input type="email" name="email" placeholder="Email Adrress">
+                    <i class="fa fa-envelope  aria-hidden="true"></i>
+                </div>
+                <button id="signup-btn">Sign-up</button>
+                
+            </div>
+        </section>
+        <!-- end signup -->
+    </main>
+    <footer id="footer">
+        <div class="container content-footer">
+            <div class="info">
+                <h4 class="title">Contact Us</h4>
+                <ul class="m-b-70">
+                    <li class="m-b-14">
+                        <i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
+                        8th floor, 379 Hudson St, New York, NY 10018
+                    </li>
+                    <li class="m-b-14">
+                        <i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
+                        (+1) 96 716 6879
+                    </li>
+                    <li class="m-b-14">
+                        <i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
+                        contact@site.com
+                    </li>
+                </ul>
+                
+                <h4 class="title">Opening Times</h4>
+                <ul>
+                    <li >09:30 AM – 11:00 PM</li>
+                    <li >Every Day</li>
+                </ul>
+            </div>
+            <div class="twitter">
+                <h4 class="title">Latest twitter</h4>
+                <div class="m-b-25">
+                    <span class="icon-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </span>
+                    <a href="#" class="footer-link">@colorlib</a>
+                    <p class="text">
+                        Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                        <a href="#" class="footer-link">https://buff.ly/2zaSfAQ</a>
+                    </p>
+                    <span class="date">21 Dec 2017</span>
+                </div>
+                <div>
+                    <span class="icon-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </span>
+                    <a href="#" class="footer-link">@colorlib</a>
+                    <p class="text">
+                        Activello is a good option. It has a slider built into that displays
+                        <a href="#" class="footer-link">https://buff.ly/2zaSfAQ</a>
+                    </p>
+                    <span class="date">21 Dec 2017</span>
+                </div>
+            </div>
+            <div class="gallery">
+
+                <h4 class="title">Gallery</h4>
+                
+                <div class="gallery-footer" id="gallery-footer">
+                    <a class="item-gallery-footer " >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-01.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-footer" >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-02.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-footer " >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-03.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-footer"  >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-04.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-footer" >
+                        <div class="red-overlay"></div>
+                     <img src="./assets/image/gallery/photo-gallery-05.jpg.webp" alt="GALLERY">
+                    </a class=>
+                    <a class="item-gallery-footer" >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-06.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-footer "  >
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-07.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-footer ">
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-08.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-footer">
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-09.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-footer ">
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-10.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-footer">
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-11.jpg.webp" alt="GALLERY">
+                    </a>
+                    <a class="item-gallery-footer">
+                        <div class="red-overlay"></div>
+                        <img src="./assets/image/gallery/photo-gallery-12.jpg.webp" alt="GALLERY">
+                    </a>
+                </div>
+                <div class="show-photo">
+                    <div class="photo">
+                        <div class="img-box">
+                            <div class="slide prev">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="slide next">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                            <img  class="preview-img"src="">
+    
+                        </div>
+                        <div class="details">
+                            <div class="title">
+                                Image <span class="current-img">  </span>
+                                of <span class="total-img">  </span>
+                            </div>
+                            <i class="fa-solid fa-xmark close-icon"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                 
+            </div>
+        </div>
+        <div class="end-footer">
+            <div class="container flex">
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa fa-facebook m-l-18" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa fa-twitter m-l-18" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="copy">@ 2017 Colorlib.
+                 <a href="#" class="link">Get The Theme</a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-back-to-top " id="myBtn">
+            <span class="symbol-btn-back-to-top">
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+            </span>
+        </div>
+    </footer>
+    
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e6f54300c1.js" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
